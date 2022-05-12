@@ -1,0 +1,530 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    background-image: url(./img/IMG_0549.PNG);
+}
+
+.header {
+    background: #ffdcde;
+    max-width: 800px;
+    height: 100px;
+    margin: 15px auto;
+    border-radius: 30px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+}
+
+.header h1 {
+    font-size: 30px;
+    width: 100px;
+    margin-left: 50px;
+    margin-top: 40px;
+    position: absolute;
+    display: inline;
+}
+
+.header h6 {
+    display: inline;
+    position: absolute;
+    padding-top: 50px;
+    margin-left: 160px;
+}
+
+li a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FFF;
+}
+
+.個人介紹 {
+    position: absolute;
+    width: 75px;
+    height: 20px;
+    margin-left: 450px;
+    top: -27px;
+}
+
+.學習經歷 {
+    position: absolute;
+    width: 75px;
+    height: 20px;
+    margin-left: 540px;
+    top: -27px;
+}
+
+.學習計畫 {
+    position: absolute;
+    width: 75px;
+    height: 20px;
+    margin-left: 630px;
+    top: -27px;
+}
+
+@media screen and (min-width: 620px) and (max-width: 900px) {
+    .header {
+        width: 600px;
+        height: 80px;
+        margin: 10px auto;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-left: 30px;
+    }
+    .header h1 {
+        margin-left: 35px;
+        margin-top: 30px;
+    }
+    .header h6 {
+        margin-left: 140px;
+        top: 0px;
+    }
+    .個人介紹 {
+        top: -25px;
+        margin-left: 330px;
+    }
+    .學習經歷 {
+        top: -25px;
+        margin-left: 420px;
+    }
+    .學習計畫 {
+        top: -25px;
+        margin-left: 510px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 620px) {
+    .header {
+        width: 450px;
+        height: 90px;
+        margin: 10px auto;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-left: 30px;
+    }
+    .header h1 {
+        margin-left: 60px;
+        margin-top: 20px;
+    }
+    .header h6 {
+        margin-left: 160px;
+        top: -5px;
+    }
+    .個人介紹 {
+        top: -35px;
+        margin-left: 150px;
+    }
+    .學習經歷 {
+        top: -35px;
+        margin-left: 250px;
+    }
+    .學習計畫 {
+        top: -35px;
+        margin-left: 350px;
+    }
+}
+
+.content {
+    background: #d8efcd;
+    width: 800px;
+    margin: 10px auto;
+    border-radius: 30px;
+}
+
+.school {
+    border-bottom: 1px solid;
+    position: absolute;
+    width: 600px;
+    height: 70px;
+    margin-left: 100px;
+}
+
+.box {
+    width: 600px;
+    height: 1100px;
+    margin: 0px auto;
+    padding-top: 30px;
+}
+
+
+/* 清除li樣式 */
+
+ul,
+li {
+    list-style: none;
+}
+
+
+/* 將ul相對定位，目的是讓內容的div絕對定位時相對ul定位，否則會相對body定位 */
+
+
+/* ul彈性盒，目的是讓li橫著排，也可以將li浮動或者轉行內塊 */
+
+ul {
+    position: relative;
+    display: flex;
+}
+
+
+/* 將三個li寬度平分，高度60px */
+
+li {
+    flex: 1;
+    height: 60px;
+}
+
+
+/* input隱藏 */
+
+input {
+    display: none;
+}
+
+
+/* 設定input的下一個節點label的樣式 */
+
+input+label {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 215, 215);
+    font-size: 25px;
+    text-align: center;
+    line-height: 65px;
+    color: #333;
+}
+
+
+/* 設定div內容的基礎樣式 隱藏內容div*/
+
+input+label+div {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+
+
+/* input+label+.university {
+    display: none;
+} */
+
+
+/* input選中狀態時候對應的label的樣式 */
+
+input:checked+label {
+    background: #914f4f;
+    color: #fff;
+}
+
+
+/* input選中時候顯示對應的div */
+
+input:checked+label+div {
+    display: block;
+}
+
+
+/* input:checked .university {
+    display: block;
+} */
+
+.box img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 200px;
+    border-radius: 50px;
+    border: 5px solid rgb(95, 131, 103);
+}
+
+.high1 {
+    position: absolute;
+    font-size: 18px;
+    margin-top: -140px;
+    margin-left: 370px;
+}
+
+.uni1 {
+    position: absolute;
+    font-size: 18px;
+    margin-top: -155px;
+    margin-left: 370px;
+    line-height: 30px;
+}
+
+.uni1 a {
+    color: #914f4f;
+}
+
+.active1:hover {
+    color: #FFF;
+}
+
+.uni1 a:hover {
+    color: #FFF;
+}
+
+@media screen and (min-width: 620px) and (max-width: 900px) {
+    .content {
+        width: 600px;
+        height: 900px;
+    }
+    .box img {
+        width: 250px;
+        height: 150px;
+    }
+    .box {
+        width: 500px;
+        height: auto;
+        margin-left: 50px;
+    }
+    .box p {
+        font-size: 18px;
+        margin-top: -130px;
+        margin-left: 270px;
+    }
+    .highSchool p {
+        font-size: 18px;
+        margin-top: -110px;
+        margin-left: 300px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 620px) {
+    .content {
+        width: 450px;
+    }
+    .highSchool img {
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .university img {
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+    .box {
+        width: 350px;
+        height: 1090px;
+        margin-left: 50px;
+    }
+    .high1 {
+        font-size: 18px;
+        margin-top: -10px;
+        margin-left: 90px;
+    }
+    .uni1 {
+        font-size: 18px;
+        margin-top: -40px;
+        margin-left: 60px;
+    }
+}
+
+.footer {
+    /*border: 1px solid;*/
+    margin: 10px auto;
+    margin-bottom: 0;
+    width: 800px;
+    height: 60px;
+    background: #3e5e2f;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.Copyright {
+    /*border: 1px solid;*/
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 67px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+.mail {
+    /*border: 1px solid;*/
+    position: absolute;
+    width: 300px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 434px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 620px) and (max-width: 900px) {
+    .footer {
+        width: 600px;
+        border-radius: 30px;
+    }
+    .Copyright {
+        margin-left: -20px;
+    }
+    .mail {
+        margin-left: 250px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 620px) {
+    .footer {
+        width: 450px;
+        height: 75px;
+        margin: 10px auto;
+    }
+    .Copyright {
+        margin-top: 1px;
+        margin-left: 75px;
+    }
+    .mail {
+        margin-top: 30px;
+        margin-left: 80px;
+    }
+}
