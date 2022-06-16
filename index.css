@@ -390,7 +390,19 @@ a:hover {
         height: 300px;
     }
     .box-body {
-        margin: 100px 50px;
+        margin: 100px auto;
+    }
+    .box:hover img {
+        transform: none;
+    }
+}
+
+@media (max-width: 545px) {
+    .box .box-hover-text {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .box-body {
+        display: none;
     }
 }
 
